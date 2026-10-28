@@ -123,3 +123,7 @@ node _scratch\verify-unlimit.mjs
 ## License
 
 MIT
+
+## 兼容性说明
+
+本插件只读取 sessionReferenceResolver 实例的 config 对象，不修改任何原生模块、不拦截事件、不打补丁。宿主升级后若该服务或 prepare() 的读取方式发生变化，插件会自动失效并回退到原生行为（上限 3），不会导致崩溃。
