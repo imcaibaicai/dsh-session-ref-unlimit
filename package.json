@@ -1,0 +1,29 @@
+{
+  "name": "dsh-session-ref-unlimit",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness host plugin: lift the built-in cap of 3 referenced sessions per message by rewriting the live sessionReferenceResolver config at runtime (no app.asar changes), with an aggregate context budget guard.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "cordis",
+    "session-reference",
+    "maxReferences",
+    "context-budget"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  }
+}
